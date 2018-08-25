@@ -3,6 +3,7 @@ package com.rohit.gettingimageusinglibrary;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.transition.CircularPropagation;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,11 +13,12 @@ import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    ImageView mImageView;
+    CircleImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
